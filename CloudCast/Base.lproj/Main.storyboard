@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sYg-BU-bqK">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Forecast View Controller-->
+        <scene sceneID="ron-aT-hXz">
+            <objects>
+                <viewController id="sYg-BU-bqK" customClass="ForecastViewController" customModule="CloudCast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ldE-5d-uyH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brooklyn, New York" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEH-xx-6Qm">
+                                <rect key="frame" x="69.000000000000014" y="79" width="255.33333333333337" height="37"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="31"/>
+                                <color key="textColor" red="1" green="0.47460024789999999" blue="0.94855641329999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place-marker" translatesAutoresizingMaskIntoConstraints="NO" id="nba-C1-0jC">
+                                <rect key="frame" x="37" y="79" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="b4l-bE-VcQ"/>
+                                    <constraint firstAttribute="width" constant="30" id="k0P-vC-hU1"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="zdb-gY-tOR">
+                                <rect key="frame" x="109" y="191" width="175" height="455"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="March 7, 2025" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCD-Fr-whe">
+                                        <rect key="frame" x="33.33333333333335" y="0.0" width="108.66666666666669" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud-snow" translatesAutoresizingMaskIntoConstraints="NO" id="Zxa-gd-Mdg">
+                                        <rect key="frame" x="0.0" y="93.333333333333314" width="175" height="175"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="175" id="Guj-m9-0z0"/>
+                                            <constraint firstAttribute="width" constant="175" id="SJm-i7-4VH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blizzard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edC-Zq-qNh">
+                                        <rect key="frame" x="57.333333333333343" y="341.33333333333337" width="60.666666666666657" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10℉" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGn-kC-Ng3">
+                                        <rect key="frame" x="70" y="434.66666666666663" width="35" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Zxa-gd-Mdg" firstAttribute="centerX" secondItem="zdb-gY-tOR" secondAttribute="centerX" id="0cp-HY-jeq"/>
+                                    <constraint firstAttribute="height" constant="175" id="EVj-wp-o2A"/>
+                                    <constraint firstItem="Zxa-gd-Mdg" firstAttribute="centerX" secondItem="zdb-gY-tOR" secondAttribute="centerX" id="MFC-GN-cV1"/>
+                                    <constraint firstItem="Zxa-gd-Mdg" firstAttribute="centerX" secondItem="zdb-gY-tOR" secondAttribute="centerX" id="pbt-Mf-wRt"/>
+                                    <constraint firstAttribute="width" constant="175" id="u9E-dx-1jv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I23-ge-sMe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zdb-gY-tOR" firstAttribute="top" secondItem="NEH-xx-6Qm" secondAttribute="bottom" constant="75" id="1dW-IG-x1u"/>
+                            <constraint firstItem="NEH-xx-6Qm" firstAttribute="leading" secondItem="nba-C1-0jC" secondAttribute="trailing" constant="2" id="Esh-h8-3TZ"/>
+                            <constraint firstItem="NEH-xx-6Qm" firstAttribute="top" secondItem="I23-ge-sMe" secondAttribute="top" constant="20" id="RD0-m1-Gt7"/>
+                            <constraint firstItem="NEH-xx-6Qm" firstAttribute="centerX" secondItem="ldE-5d-uyH" secondAttribute="centerX" id="fEI-DE-91G"/>
+                            <constraint firstItem="nba-C1-0jC" firstAttribute="top" secondItem="I23-ge-sMe" secondAttribute="top" constant="20" id="fZN-k9-8Sp"/>
+                            <constraint firstItem="zdb-gY-tOR" firstAttribute="centerX" secondItem="ldE-5d-uyH" secondAttribute="centerX" id="oXP-QW-35f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="oCD-Fr-whe" id="voD-dd-t7N"/>
+                        <outlet property="descriptionLabel" destination="edC-Zq-qNh" id="18K-N6-GZB"/>
+                        <outlet property="forecastImageView" destination="Zxa-gd-Mdg" id="hzP-43-Q33"/>
+                        <outlet property="locationLabel" destination="NEH-xx-6Qm" id="3xJ-Gg-gab"/>
+                        <outlet property="temperatureLabel" destination="rGn-kC-Ng3" id="jNI-hD-bYF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="68Z-CT-Stt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199.23664122137404" y="-61.267605633802823"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud-snow" width="91" height="91"/>
+        <image name="place-marker" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
